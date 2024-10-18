@@ -5,7 +5,10 @@ document.addEventListener('DOMContentLoaded', function () {
     document.body.appendChild(popover);
   
     buttons.forEach(button => {
-      button.textContent = '• • •';
+      // Checks if user put anything to change footnote button appearance, otherwise defaults to dots
+      if (button.innerHTML.trim() == "") {
+        button.textContent = '• • •';
+      } 
       button.addEventListener('click', function (event) {
         popover.textContent = event.target.getAttribute('data-footnote');
         const rect = button.getBoundingClientRect();
