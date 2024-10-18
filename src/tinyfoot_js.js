@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const buttons = document.querySelectorAll('.tinyfoot');
+    const buttons = document.querySelectorAll('tiny-foot');
     if(!document.getElementById('popover')){
       const popover = document.createElement('div');
       popover.id = 'popover';
@@ -21,9 +21,8 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   
     document.addEventListener('click', function (event) {
-      if (!event.target.classList.contains('tinyfoot')) {
+      if (!event.target.getAttribute('data-footnote')) {
         popover.style.display = 'none';
       }
     });
   });
-  
