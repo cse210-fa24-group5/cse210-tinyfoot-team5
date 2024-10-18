@@ -1,8 +1,10 @@
 document.addEventListener('DOMContentLoaded', function () {
     const buttons = document.querySelectorAll('.tinyfoot');
-    const popover = document.createElement('div');
-    popover.id = 'popover';
-    document.body.appendChild(popover);
+    if(!document.getElementById('popover')){
+      const popover = document.createElement('div');
+      popover.id = 'popover';
+      document.body.appendChild(popover);
+    }
   
     buttons.forEach(button => {
       button.textContent = '• • •';
