@@ -4,7 +4,8 @@ body {
   }
   
   .tinyfoot {
-    background-color: #007bff;
+    
+    background-color: #696c6f;
     color: #fff;
     border: none;
     padding: 2px 6px;
@@ -12,25 +13,18 @@ body {
     border-radius: 4px;
     cursor: pointer;
   }
+
+  .tinyfoot:hover {
+    background-color: #38433a;
+  }
   
-  .popover {
+  #popover {
     position: absolute;
     padding: 10px;
     background-color: #f9f9f9;
     border: 1px solid #ddd;
     border-radius: 4px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: none;
-    z-index: 1000;
+    display:none ;
   }
   
-  .popover::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: -5px;
-    transform: translateY(-50%);
-    border: 5px solid transparent;
-    border-right-color: #ddd;
-  }
   
