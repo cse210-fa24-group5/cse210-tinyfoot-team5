@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  .tinyfoot {
+    
+    background-color: #696c6f;
+    color: #fff;
+    border: none;
+    padding: 2px 6px;
+    margin-left: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .tinyfoot:hover {
+    background-color: #38433a;
+  }
+  
+  #popover {
+    position: absolute;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display:none ;
+  }
+  
+  
