@@ -12,6 +12,14 @@ document.addEventListener('DOMContentLoaded', function () {
     popover = document.getElementById('popover');
   }
 
+  let closeButtonFn = () => {
+    popover.style.opacity = '0';
+    popover.style.transform = 'scale(0.95)';
+    setTimeout(() => {
+      popover.style.display = 'none';
+    }, 300);
+  }
+
   buttons.forEach(button => {
     // Checks if user put anything to change footnote button appearance, otherwise defaults to dots
     if (button.innerHTML.trim() == "") {
@@ -48,19 +56,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
       // Close popover on clicking close button
       closeButton.addEventListener('click', function () {
-        popover.style.display = 'none';
+        closeButtonFn();
       });
     });
   });
 
   // Close popover when clicking outside of it
   document.addEventListener('click', function (event) {
-    if (!event.target.classList.getAttribute('data-footnote') && !popover.contains(event.target)) {
-      popover.style.opacity = '0';
-      popover.style.transform = 'scale(0.95)';
-      setTimeout(() => {
-        popover.style.display = 'none';
-      }, 300);
+    if (!event.target.getAttribute('data-footnote') && !popover.contains(event.target)) {
+      closeButtonFn();
     }
   });
 });
