@@ -3,7 +3,7 @@ body {
   padding: 20px;
 }
 
-.tinyfoot {
+tiny-foot {
   background-color: #696c6f;
   color: #fff;
   border: none;
@@ -13,7 +13,7 @@ body {
   cursor: pointer;
 }
 
-.tinyfoot:hover {
+tiny-foot:hover {
   background-color: #38433a;
 }
 

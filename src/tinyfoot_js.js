@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-  const buttons = document.querySelectorAll('.tinyfoot');
+  const buttons = document.querySelectorAll('tiny-foot');
 
   // Create popover if it doesn't exist
   let popover;
@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Close popover when clicking outside of it
   document.addEventListener('click', function (event) {
-    if (!event.target.classList.contains('tinyfoot') && !popover.contains(event.target)) {
+    if (!event.target.classList.getAttribute('data-footnote') && !popover.contains(event.target)) {
       popover.style.opacity = '0';
       popover.style.transform = 'scale(0.95)';
       setTimeout(() => {
