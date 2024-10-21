@@ -19,5 +19,18 @@ We were able to plan meetings pretty effectively where everyone joined. Addition
 - Everyone has been responsible in messages in the team chat. All people participated and were able to contribute to design decisions for tinyfoot
 - Gives a good idea for how collaboration and communication will go in the future, although we will try to delegate more work to be done in parallel.
   - We will likely have sub-teams/verticals of the project in the future, and try to switch people throughout subteams so that everyone gets a chance to work on different parts of the codebase. 
-  - Overall, we have a great team dynamic and work ethic, and are confident in our ability to adapt to the change in scope of our work in the final project.
-  
+- The flexibility of our meeting schedule was beneficial, and each session was helpful in that we were able to share what each of us have learned independently. We will likely keep this format of async work + synchronous sharing for the final project.
+- We made sure to spend time to ensure that everyone was able to follow what we were working on at any given point, and that nobody was lost or left behind. For example, taking the extra time needed to make sure everyone got their machine properly set up. Everyone feels much more prepared to work on the actual project now.
+- Most importantly, there was a sense of psychological safety, where we all felt safe disagreeing and providing new perspectives for how we should go about different architectural decisions in the project. This really helped us have a more diverse set of ideas to choose from when architecting our project, and is something we will definitely need to persist for the final project. 
+- We also had a good time exploring the CSE building with most people for the first time, poking around ChezBob and the grad student lounge!
+- Overall, we have a great team dynamic and work ethic, and are confident in our ability to adapt to the change in scope of our work in the final project.
+
+## Technical Learnings
+Many team members have very limited experience with web dev, but learned a lot during the warmup.
+- We felt that littlefoot was easier to understand that bigfood, but learned that it could be much, much simpler than either. This is why we opted for reducing bloat, and limiting our solution to JS and CSS
+- Running bigfoot and littlefoot locally on everyones machines was a pain, as everyone has different operating systems, and many of the build scripts were built for linux
+  -  We ended up using Github Codespaces to make sure that everyone was working on a similar machine, which was extremely helpful. Once we made that decision it was smooth going forward, but it might be worth looking into getting everyone using Docker for the final project instead so we may all work locally in the same virtual environment, and same defined dependencies.
+- Again, taking time out of meetings to ensure everyone understood topics we were discussing was very helpful
+
+# Summary
+Overall, even though there is much we would like to change with tinyfoot, we feel we did a great job growing as a team, socially and technically. We feel this warmup effectively prepared us for the final project, and we're excited to get started!
