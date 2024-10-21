@@ -6,13 +6,63 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TinyFoot Demo</title>
   <link rel="stylesheet" href="../src/tinyfoot_styles.css">
+  <style>
+    body {
+      width: min-content;
+      margin: 0px auto;
+    }
+
+    p {
+      width: 40rem;
+    }
+  </style>
 </head>
-
-<h1>
-  This is a demo page for our tinyfoot
-</h1>
-
 <body>
+  <h1>Team 5 - Tinyfoot.js Demo</h1>
+
+  <h2>Introduction</h2>
+  <p>
+    This is Git Push Masters' version of tinyfoot, which we wrote from scratch. 
+    The user declares a tinyfoot as a custom tag in html with property of data-footnote, 
+    which would be the footnote's content. 
+  </p>
+  <p>
+    The default button is 3 dots, and if the user wants to change the text content of the button,
+     they can write the text inside the text content section of the html tag. When a footnote is opened, 
+     the user can close it by clicking another footnote, clicking the 'x' button, 
+     or click anywhere else in the page.
+  </p>
+  <h2>Usage</h2>
+  <p>
+    All that needs to be done, is to import our js and css files into your HTML document:    
+  </p>
+  <code>
+    &lt;link rel="stylesheet" href="./tinyfoot/tinyfoot_styles.css"&gt;
+  </code>
+  <br/>
+  <code>
+    &lt;script src="./tinyfoot/tinyfoot_js.js"&gt;&lt;/script&gt;
+  </code>
+  <p>
+    And then use our new <code>&lt;tiny-foot&gt;</code> tag like so:
+  </p>
+  <code>
+    &lt;tiny-foot data-footnote="This is the content of footnote 1."&gt;1&lt;/tiny-foot&gt;
+  </code>
+  <br/>
+  <code>
+    &lt;tiny-foot data-footnote="This is the content of footnote 2."&gt;&lt;/tiny-foot&gt;
+  </code>
+  <p>
+    Where the inner HTML if the new component is the contents of the footnote button,
+     and the "data-footnote" attribute is the string content inside the footnote itself.
+     If no inner HTML is defined, the footnote appears as three dots.
+  </p>
+  <p>
+    The demo below demonstrates what the above implemented code looks like.
+  </p>
+
+  <h2>Demo</h2>
   <p>This is a sample paragraph with a footnote.
     <tiny-foot data-footnote="This is the content of footnote 1.">1</tiny-foot>
   <p>Here’s another example with a second footnote.
