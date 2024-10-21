@@ -13,3 +13,11 @@ We worked synchronously for the most part, which had a lot of challenges.
     - Then, we could have prtitioned our team to work on CSS/styling the buttons, styling the popovers, and another for doing to open/close functionality in JS.
     - We could have taken it a step further, and said "the JS script will look like this, calling these functions (which are to be implemented) on these events" and had people implement the given functions (like popover open, and popover close) in parallel.
   - However, you can see that for such a small project, the amount of effort it would have taken to take this more formal route of coordinating and splitting the project up like this, would have taken much more effort than us all group programming the small JS file together. Once the fundamentals were down however/our MVP was implemented, we were able to split work up effectively.
+
+## Communication/Collaboration
+We were able to plan meetings pretty effectively where everyone joined. Additionally, used Mattermost + a WhatsApp group for more immediate notifications for people who had trouble getting notified by Mattermost. 
+- Everyone has been responsible in messages in the team chat. All people participated and were able to contribute to design decisions for tinyfoot
+- Gives a good idea for how collaboration and communication will go in the future, although we will try to delegate more work to be done in parallel.
+  - We will likely have sub-teams/verticals of the project in the future, and try to switch people throughout subteams so that everyone gets a chance to work on different parts of the codebase. 
+  - Overall, we have a great team dynamic and work ethic, and are confident in our ability to adapt to the change in scope of our work in the final project.
+  
